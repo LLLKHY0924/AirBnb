@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>에어비앤비 - 강희영</title>
+	<link rel="shortcut icon" href="images/airbnb.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="warp">
+		<div class="background">
+			<header>
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.svg" alt="" width="37px"></a>
+				</div>
+				<div class="gnb">
+					<a href="#none"><img src="images/world.svg" alt="" width="12px"> 한국어 (KR)</a>
+				</div>
+				<div class="gnb">
+					<a href="#none">\ KRW</a>
+				</div>
+				<div class="gnb">
+					<a href="#none">숙소 호스팅</a>
+				</div>
+				<div class="gnb">
+					<a href="#none">체험 호스팅</a>
+				</div>
+				<div class="gnb">
+					<a href="#none">도움말</a>
+				</div>
+				<div class="gnb">
+					<button onclick="join_open();" style="width: auto;">회원가입</button>
+				</div>
+				<div class="gnb">	
+					<button onclick="login_open();" style="width: auto;">로그인</button>
+				</div>
+			</header>
+
+			<div class="bottom-text">
+                <!-- 오리건에 있는 300개 이상의 <br>독특한 숙소 -->
+                <a href="#" class="item">
+                    <strong>오리건에 있는 300개 이상의<br>독특한 숙소</strong>
+                </a>			
+			</div>
+			
+			<!-- 예약 -->
+			<div class="reservation">
+				<h1>특색 있는 숙소와 즐길<br>거리를 예약하세요.</h1>
+				<div class="re-form" style="margin-bottom:10px;">
+					<span>목적지</span><br>
+					<input type="text" placeholder="모든 위치">
+				</div>
+				<div class="re-form">
+					<div style="float: left; width:50%;">
+						<span>체크인</span><br>
+						<input type="date" placeholder="년/월/일">
+					</div>
+					<div style="float: right; width:50%;">
+						<span>체크아웃</span><br>
+						<input type="date" placeholder="년/월/일">
+					</div>
+				</div><br><br><br>
+				<div class="re-form" style="margin:16px 0;">
+					<span>인원</span><br>
+					<button>
+						<div>인원</div>
+						<div class="arrow-down"><img src="/images/arrow-down.svg" alt="" width="10px;" style="float:right; position: absolute; top:10px; right:7px"></div>
+					</button>
+				</div>
+				<div class="search-btn">
+					<button>검색</button>
+				</div>
+			</div>
+		</div>
+
+	<!-- 컨텐츠 -->
+		<div class="content">
+			<section class="look-around">
+				<h1 class="text-1">에어비앤비 둘러보기</h1>
+				<ul>
+					<li>
+						<div>
+							<a href="#none"><img src="images/look1.jpg" alt="" style="height:72px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;"></a>
+							<span class="text">숙소</span>
+						</div>
+					</li>
+					<li>
+						<a href="#none"><img src="images/look2.jpg" alt="" style="height:72px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;"></a>
+						<span class="text">체험</span>
+					</li>
+					<li>
+						<a href="#none"><img src="images/look3.jpg" alt="" style="height:72px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;"></a>
+						<span class="text">어드벤처</span>
+					</li>
+				</ul>
+			</section>
+
+
+			<!-- 쿠키체험 -->
+			<section>
+				<div class="cooking">
+					<div class="text">
+						<div class="top-title">
+							<span>에어비앤비가 선보입니다.</span>
+						</div>
+						<div class="title">
+							<span>쿠킹을 즐기는<br>체험</span>
+						</div>
+						<div class="side-text">
+							<span>에어비앤비 체험</span>
+						</div>
+						<div class="button">
+							<a href="#none">자세히 알아보기</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- 에어비앤비 어드벤처 소개  -->
+			<section>
+				<div class="a-info">
+					<div class="title">
+						<h1>에어비앤비 어드벤처를 소개합니다.</h1>
+						<h4>현지 전문가가 진행하는 2일 이상의 여행 - 액티비티, 식사, 숙박 포함</h4>
+					</div>
+					<div class="info-group">
+						<a href="" class="box">
+							<div class="bg bg1"></div>
+							<div class="text1">노르웨이</div>
+							<div class="text4">2 Nights PACKAGE All Inclusive<br>
+								1인당 \747,079부터 · 3일<br>
+								★ 5.1(1)
+							</div>
+						</a>
+						<a href="" class="box">
+							<div class="bg bg2"></div>
+							<div class="text1">쿠바</div>
+							<div class="text4">Trinidad Salasa, Nature & Beach 4-day<br>
+								1인당 \621,953부터 · 4일
+							</div>
+						</a>
+						<a href="" class="box">
+							<div class="bg bg3"></div>
+							<div class="text1">베트남</div>
+							<div class="text4">Nam Cat Tien Experience 2-day<br>
+								1인당 \546,331부터 · 2일
+							</div>
+						</a>
+						<a href="" class="box">
+							<div class="bg bg4"></div>
+							<div class="text1">미국</div>
+							<div class="text4">Alaskan Wilderness Dogseled<br>
+								Adventure<br>
+								1인당 \2,251,691부터 · 3일<br>
+								★ 5.0(1)
+							</div>
+						</a>
+						<a href="" class="box">
+							<div class="bg bg5"></div>
+							<div class="text1">캐나다</div>
+							<div class="text4">Whitewater rafting in British<br>
+								Columbia<br>
+								1인당 \3,271,420부터 · 6일
+							</div>
+						</a>
+						<a href="" class="box">
+							<div class="bg bg6"></div>
+							<div class="text1">코스타리카</div>
+							<div class="text4">Costa Rica Surf & Yoga Adventure<br>
+								1인당 \947,192부터 · 8일
+							</div>
+						</a>
+					</div>
+					<br><br><br><br><br><br>
+					<div class="all list">
+						<a href="#" class="link">
+							<strong class="stall">어드벤처 모두 보기</strong><strong> > </strong>
+						</a>
+					</div>	
+				</div>
+			</section>
+		</div>
+		<!-- 에어비앤비 플러스 숙소 -->
+		<section class="plus">
+			<div class="air">
+				<div class="title">
+					<h1>에어비앤비 플러스 숙소</h1>
+					<h4>퀄리티와 인테리어 디자인이 검증된 숙소 셀렉션</h4>
+				</div>
+				<div class="a-plus">
+					<div class="image">
+						<div class="text">
+							<div>
+								<img src="images/ab.svg" alt="">
+							</div>
+							<div class="button">
+								<a href="#none">숙소 둘러보기 > </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- 전 세계 숙소 -->
+		<section>
+			<div class="world">
+				<a href="#" class="link">
+					<strong>전 세계 숙소 <span id="sign">></span></strong>
+				</a>
+			</div><br>
+			<div class="wrapper">
+				<a href="#" class="box">
+					<div class="bg bg1"></div>
+					<div class="text1">
+						<span class="superhost">슈퍼호스트</span>
+						Riva
+						<span class="star star1">4.85</span>
+					</div>	
+					<p class="text2">Lussuoso. Vista incantevole.</p>
+				</a>
+				<a href="#" class="box">
+					<div class="bg bg2"></div>
+					<div class="text1">
+						<span class="superhost">슈퍼호스트</span>
+						흐바르
+						<span class="star star1">4.78</span>			
+					</div>
+					<p class="text2">The best position in Hvar!</p>
+				</a>		
+				<a href="#" class="box">
+					<div class="bg bg3"></div>
+					<div class="text1">
+						<span class="plus">PLUS</span>
+						Mayne lsland
+						<span class="star star2">4.87</span>
+						</div>				
+					<p class="text2">Cob Cottage</p>
+				</a>
+				<a href="#" class="box">
+					<div class="bg bg4"></div>
+					<div class="text1">
+						<span class="superhost">슈퍼호스트</span>캐스트로(The...)
+						<span class="star star2">4.92</span>
+					</div>
+					<p class="text2">Perfectly located Castro</p>
+				</a>
+				<a href="#" class="box">
+					<div class="bg bg5"></div>
+					<div class="text1">
+						<span class="plus">PLUS</span>
+						Old Town · Edinburgh
+						<span class="star star2">4.98</span>
+					</div>
+					<p class="text2">Classical Apartment on the Royal Mile</p>
+				</a>
+				<a href="#" class="box">
+					<div class="bg bg6"></div>
+					<div class="text1">
+						레알레오-산 마티아스·그라나다
+						<span class="star star1">4.81</span>
+					</div>
+					<p class="text2">Cave with garden at Sacromonte</p>
+				</a>
+					<a href="#" class="box">
+					<div class="bg bg7"></div>
+					<div class="text1">
+						찰스턴
+						<span class="star star2">4.73</span>
+					</div>				
+					<p class="text2">A Pirates Life For Me: Houseboat Downtown w/ Bikes</p>
+				</a>
+					<a href="#" class="box">
+					<div class="bg bg8"></div>
+					<div class="text1">
+						<span class="superhost">슈퍼호스트</span>
+						이아(Oia)	
+						<span class="star star2">4.93</span>			
+					</div>
+					<p class="text2">Unique Architecture Cave House</p>
+				</a>
+			</div>
+			<br><br>	
+			<div class="search all">
+				<a href="#" class="link">
+					<strong class="stall">모두 보기(2,000개 이상)</strong><strong> > </strong>
+				</a>
+			</div>	
+		</section>
+	<!-- 컨텐츠 끝-->
+
+	<!-- 조인 팝업창 시작 display:none -->
+	<div id="join-popup" class="join-popup">
+		<!-- 조인 윈도우창 시작  -->
+			<div class="join-window">
+			<div class="close-button">
+				<!-- 버튼내용  -->
+				<button onclick="join_close();" class="close">
+					<img src="images/close.svg" width="16px" alt="">
+				</button>			
+			</div>
+			<button type="submit" class="fbook-login form">
+				<!-- 페이스북 계정 로그인  -->
+				<img src="images/facebook.svg" alt="" style="" width="18px; height:18px;">
+				페이스북 계정으로 로그인		
+			</button>
+			<button class="google-login form">
+				<!-- 구글 계정 로그인  -->
+				<img src="images/google.svg" alt="" width="18px" height="18px" style="padding-top: 5px;">
+				구글 계정으로 로그인
+			</button>
+			<div class="line-combo">
+				<!--  -----또는-----  -->
+				<div class="line-left"></div>
+				<span>또는</span>
+				<div class="line-right"></div>
+			</div>
+			<button class="email-login form">
+				<img src="images/email.svg" alt="" width="18px" height="18px">
+				이메일로 회원 가입
+			</button>		
+				<div class="line-combo line-all"></div>
+				<span class="already">이미 에어비앤비 계정이 있나요? <a href="#">로그인</a></span>
+			</div>
+		<!-- 조인 윈도우창 끝  -->
+		</div>
+	<!-- 조인 팝업창 끝  --> 
+	
+	<!-- 로그인 팝업창 시작 -->
+		<div id="login-popup" class="join-popup">
+			<!-- 로그인 윈도우창 시작 -->
+			<div class="login-window">
+				<div class="close-button">
+				<!-- 버튼내용  -->
+					<button onclick="login_close();" class="close">
+					<img src="images/close.svg" width="16px" alt="">
+					</button>			
+					</div>
+					<button type="submit" class="fbook-login form">
+						<!-- 페이스북 계정 로그인  -->
+						<img src="images/facebook.svg" alt="" width="18px" height="18px">
+						페이스북 계정으로 로그인		
+					</button>
+					<button class="google-login form">
+						<!-- 구글 계정 로그인  -->
+						<img src="images/google.svg" alt="" width="18px" height="18px" style="padding-top: 5px;">
+						구글 계정으로 로그인
+					</button>
+					<div class="line-combo">
+					<!--  -----또는-----  -->
+					<div class="line-left"></div>
+					<span>또는</span>
+					<div class="line-right"></div>
+					</div>
+					<div class="empw">
+						<input type="email" placeholder="이메일 주소">
+					</div>
+					<div class="empw">
+						<input type="password" placeholder="비밀번호">			
+					</div>
+					<div class="save">
+					<input type="checkbox" id="cb1">
+					<span>비밀번호 저장</span>		
+					<a href="#" class="pwshow" style="float: right;">비밀번호 보기</a>
+					</div>
+					<a href="#" class="pwshow">전화번호로 로그인</a> <span> ·
+					 </span>
+					 <a href="#" class="pwshow">비밀번호가 생각나지 않으세요?</a>
+					<button type="submit" class="form">
+						로그인
+					</button>
+					<div class="line-combo line-all"></div>
+					<span class="already">에어비앤비 계정이 없으세요? <a href="#">회원 가입</a></span>
+			</div>
+		</div>
+		
+		<script>
+			// 회원가입 팝업
+			var join_popup = document.getElementById('join-popup');
+			function join_close(){
+				join_popup.style.display = 'none';
+			}
+			function join_open(){
+				join_popup.style.display = 'block';
+			}
+			window.onclick = function(event) {
+			if (event.target == join_popup) {
+				join_popup.style.display = "none";
+			}
+			// 로그인 close
+			if (event.target == login_popup) {
+				login_popup.style.display = "none";
+			}
+			}	
+			//  로그인 팝업
+			var login_popup = document.getElementById('login-popup');
+			function login_close(){
+				login_popup.style.display = 'none';
+			}
+			function login_open(){
+				login_popup.style.display = 'block';
+			}
+		</script>
+		<!--첫 페이지(main-page) 끝 -->
+		<!--서브 페이지(sub-page) 시작 -->
+	</div>
+</body>
+</html>
